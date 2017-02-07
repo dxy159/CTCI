@@ -25,8 +25,11 @@ public class OnePointSix {
 			compressed += count;
 			
 		}
+
+		s = s.substring(0, s.length() - 1);
+
 		
-		if (compressed.length() < s.length()) {
+		if (compressed.length() > s.length()) {
 			return s;
 		}
 		
@@ -35,7 +38,7 @@ public class OnePointSix {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(compression("abcdefg"));
+		System.out.println(compression("aaabbbsssrrrrrr"));
 	}
 	
 }
